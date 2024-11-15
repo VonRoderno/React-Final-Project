@@ -30,19 +30,21 @@ export default function Login() {
 
   return (              
       <form onSubmit={handleSubmit} className={styles['login-form']}>
-        <h2>login</h2>
+        <h2>Login</h2>
         <label>
-          <span>email:</span>
+          <span>Email:</span>
           <input 
             type="email"
             ref={email}
+            placeholder='Email...'
           />
         </label>
         <label>
-          <span>password:</span>
+          <span>Password:</span>
           <input 
             type="password"
             ref={password}
+            placeholder='Password...'
           />
         </label>
         { !isPending && <button className="btn">Login</button> }

@@ -16,17 +16,17 @@ export default function Navbar() {
 
     return (
         <nav>
-          <h1>My Articles</h1>
+          <h1>Inventory Management System</h1>
           {console.log(userLoggedIn)}
                     
-          {userLoggedIn && (
+          {/* {userLoggedIn && (
               <>
                   <NavLink to="/">Home</NavLink>
                   <NavLink to="/about">About</NavLink>
                   <NavLink to="/contact">Contact</NavLink>
                   <NavLink to="/new">New Article</NavLink>
               </>
-          )}
+          )} */}
           {!userLoggedIn && (
             <>
             <NavLink to="/login">Login</NavLink>

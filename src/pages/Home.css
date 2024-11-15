@@ -1,0 +1,111 @@
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .add-item {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .add-item input {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .add-item button {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .table-container {
+    margin-top: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling for small screens */
+  }
+  
+  /* Center content horizontally and vertically */
+table {
+    width: 100%; /* Make the table responsive */
+    border-collapse: collapse; /* Merge cell borders */
+  }
+  
+  th, td {
+    text-align: center; /* Center content horizontally */
+    vertical-align: middle; /* Center content vertically */
+    padding: 10px; /* Add padding for better spacing */
+    border: 1px solid #ddd; /* Add a border to cells */
+  }
+  
+  thead th {
+    background-color: #f4f4f4; /* Optional: Highlight header row */
+    font-weight: bold;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    align-items: center; /* Center icons vertically */
+    gap: 10px; /* Space between icons */
+  }
+  
+  /* General styling for the table */
+  .table-container {
+    overflow-x: auto; /* Allow horizontal scroll on small screens */
+  }
+  
+  .icon {
+    width: 20px; /* Adjust the size of the icons */
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  
+  .icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    opacity: 0.8; /* Dim the icon slightly */
+  }
+  
+  /* Specific Colors for Each Action */
+  .delete-icon {
+    fill: red; /* For SVGs, or apply a red filter for images */
+    color: red;
+  }
+  
+  .edit-icon {
+    fill: yellow; /* For SVGs, or apply a yellow filter for images */
+    color: yellow;
+  }
+  
+  /* Media Queries for Small Screens */
+  @media (max-width: 600px) {
+    .add-item {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    table th, table td {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    .action-buttons button {
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+  }
+  
